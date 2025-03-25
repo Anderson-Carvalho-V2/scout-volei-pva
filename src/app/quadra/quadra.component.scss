@@ -1,0 +1,76 @@
+.quadra {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colunas */
+    grid-template-rows: 1fr 1fr;  /* 2 linhas: uma para a zona de ataque e outra para a zona de defesa */
+    gap: 10px;  /* Espaço entre as células */
+    justify-items: center;  /* Centraliza os itens horizontalmente */
+    align-items: center;  /* Centraliza os itens verticalmente */
+    width: 100%;
+    height: 600px;  /* Ajuste conforme necessário */
+    background: #f1f1f1;
+    border: 2px solid #3498db;  /* Borda da quadra */
+    position: relative;
+  }
+  
+  .linha-3m {
+    grid-column: span 3;  /* A linha dos 3 metros ocupa as 3 colunas */
+    width: 100%;
+    height: 2px;
+    background-color: red;  /* Cor da linha dos 3 metros */
+    position: absolute;
+    top: 50%;  /* Posiciona a linha a 1/3 da altura da quadra */
+  }
+  
+  .atleta {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;  /* Cor dos atletas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  /* Zonas de Ataque e Defesa */
+  .zona-ataque {
+    grid-row: 1;  /* Zona de ataque na primeira linha */
+  }
+  
+  .zona-defesa {
+    grid-row: 2;  /* Zona de defesa na segunda linha */
+  }
+  
+  .linha-1-coluna-3 {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  
+  .linha-1-coluna-2 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  
+  .linha-1-coluna-1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  
+  .linha-2-coluna-3 {
+    grid-row: 2;
+    grid-column: 3;
+  }
+  
+  .linha-2-coluna-2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  
+  .linha-2-coluna-1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  

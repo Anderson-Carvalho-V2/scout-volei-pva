@@ -1,0 +1,20 @@
+<!-- quadra.component.html -->
+
+<!-- src/app/quadra/quadra.component.html -->
+
+<!-- Botão de Rodízio -->
+<button (click)="fazerRodizio()">Rodízio</button>
+
+<!-- Quadra -->
+<div class="quadra">
+  <div class="linha-3m"></div> <!-- Linha dos 3 metros -->
+
+  <!-- Zona de Ataque (acima da linha dos 3 metros) -->
+  <div *ngFor="let atleta of atletas" [ngClass]="getPosicao(atleta)" class="atleta">
+    {{ atleta.numeroCamisa }}
+  </div>
+</div>
+
+
+
+  
